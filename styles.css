@@ -1,0 +1,165 @@
+/* Basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #f90;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+.logo img {
+    height: 40px; /* Reduced the size of the logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Ensures navigation links are on the right */
+    flex: 3;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.hero {
+    background: url("Images/home.avif") no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0% 150px;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero img {
+    height: 350px;
+    position: absolute;
+    margin-right: 500px;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    width: 450px;
+    padding: 50px 60px;
+    border-radius: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.cta-button {
+    background: #f90;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center; /* Center-align the grid items */
+    width: 100%;
+    max-width: 1000px; /* Set a max width for better alignment */
+}
+
+.product-card {
+    margin-top: 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

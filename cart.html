@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Be Minimalist</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Be Minimalist Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Shop</a>
+                    <div class="dropdown-content">
+                        <a href="bath-body-care.html">Bath & Body care</a>
+                        <a href="skin-care.html">Skin Care</a>
+                        <a href="hair-care.html">Hair Care</a>
+                        <a href="lip-care.html">Lip Care</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cart">
+        <h1>Your Cart</h1>
+        <div class="cart-items">
+            <!-- Example cart item -->
+            <div class="cart-item">
+                <img src="Images/BC5.avif" alt="Product 1">
+                <div class="cart-item-details">
+                    <h3>GSPF 50+ Sunscreen Stick</h3>
+                    <p>Price: ₹ 699</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <button class="remove-button">Remove</button>
+            </div>
+            <div class="cart-item">
+                <img src="Images/LC2.avif" alt="Product 2">
+                <div class="cart-item-details">
+                    <h3>Lip Balm SPF 30</h3>
+                    <p>Price: ₹ 295</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <button class="remove-button">Remove</button>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <p>Total:₹ 994</p>
+            <button id="checkout-button">Checkout</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Be Minimalist. All rights reserved.</p>
+    </footer>
+</body>
+</html>
